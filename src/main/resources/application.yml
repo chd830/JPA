@@ -1,9 +1,14 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/jpashop
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
@@ -20,3 +25,4 @@ loggin:
 #    hibernate가 생성하는 모든 sql을 볼 수 있음
 #    로그로 출력
     org.hibernate.SQL: debug
+    org.hibernate.type: trace
