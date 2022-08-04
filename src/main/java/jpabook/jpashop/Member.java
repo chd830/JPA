@@ -14,4 +14,12 @@ public class Member {
     @Id @GeneratedValue
     private Long id;
     private String username;
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                '}';
+    }
 }
