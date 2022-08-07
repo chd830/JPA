@@ -5,6 +5,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+import static javax.persistence.FetchType.*;
+
 @Entity
 @Getter @Setter
 public class Delivery {
@@ -14,7 +16,7 @@ public class Delivery {
     private Long id;
 
     // 1대1의 관계이기 때문에 어디에 연관관계의 주인을 선언해도 상관없다
-    @OneToOne(mappedBy = "delivery")
+    @OneToOne(mappedBy = "delivery", fetch = LAZY)
     private Order order;
 
     // 내장 타입
