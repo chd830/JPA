@@ -23,6 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
 	//  쿼리 파라미터를 로그로 남기는 외부 라이브러리(시스템 자원 사용)
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
 	implementation 'junit:junit:4.13.1'
